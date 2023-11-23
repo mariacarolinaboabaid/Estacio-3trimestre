@@ -13,6 +13,7 @@ import jakarta.persistence.Table;
 @Table(name = "PessoaFisica")
 public class PessoaFisica extends Pessoa{
 
+    // Atributos
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,8 +25,7 @@ public class PessoaFisica extends Pessoa{
     @JoinColumn(name = "id")
     private Pessoa pessoa;
 
-    // Getters e Setters
-
+    // Métodos
     public Long getId() {
         return this.id;
     }

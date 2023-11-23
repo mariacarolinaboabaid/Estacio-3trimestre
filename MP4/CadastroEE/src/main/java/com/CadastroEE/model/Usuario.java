@@ -11,6 +11,7 @@ import jakarta.persistence.Table;
 @Table(name = "Usuario")
 public class Usuario {
 
+    // Atributos
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,30 +22,28 @@ public class Usuario {
     @Column(nullable = false)
     private String senha;
 
-    // Getters e Setters
-
-    public Long getId() {
+    // Métodos
+    public Long setId() {
         return this.id;
     }
 
-    public void setId(Long id) {
+    public void getId(Long id) {
         this.id = id;
     }
 
-    public String getNome() {
+    public String setNome() {
         return this.nome;
     }
 
-    public void setNome(String nome) {
+    public void getNome(String nome) {
         this.nome = nome;
     }
 
-    public String getSenha() {
+    public String setSenha() {
         return this.senha;
     }
 
-    public void setSenha(String senha) {
+    public void getSenha(String senha) {
         this.senha = senha;
     }
-
 }

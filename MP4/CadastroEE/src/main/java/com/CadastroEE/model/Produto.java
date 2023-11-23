@@ -11,6 +11,7 @@ import jakarta.persistence.Table;
 @Table(name = "Produto")
 public class Produto {
 
+    // Atributos
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,8 +25,7 @@ public class Produto {
     @Column(nullable = false)
     private double preco;
 
-    // Getters e Setters
-
+    // Métodos
     public Long getId() {
         return this.id;
     }
@@ -42,14 +42,6 @@ public class Produto {
         this.nome = nome;
     }
 
-    public int getQuantidade() {
-        return this.quantidade;
-    }
-
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
-    }
-
     public double getPreco() {
         return this.preco;
     }
@@ -58,4 +50,11 @@ public class Produto {
         this.preco = preco;
     }
 
+    public int getQuantidade() {
+        return this.quantidade;
+    }
+
+    public void setQuantidade(int quantidade) {
+        this.quantidade = quantidade;
+    }
 }

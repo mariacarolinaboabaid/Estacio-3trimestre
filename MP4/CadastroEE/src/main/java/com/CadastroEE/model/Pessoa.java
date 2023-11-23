@@ -14,6 +14,7 @@ import jakarta.persistence.Table;
 @Table(name = "Pessoa")
 public class Pessoa {
 
+    // Atributos
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -43,75 +44,75 @@ public class Pessoa {
     private PessoaJuridica pessoaJuridica;
 
     // Métodos
-    public Long pegarId() {
+    public Long getId() {
         return this.id;
     }
 
-    public void criarId(Long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String pegarNome() {
+    public String getNome() {
         return this.nome;
     }
 
-    public void criarNome(String nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public String pegarLogradouro() {
+    public String getLogradouro() {
         return this.logradouro;
     }
 
-    public void criarLogradouro(String logradouro) {
+    public void setLogradouro(String logradouro) {
         this.logradouro = logradouro;
     }
 
-    public String pegarCidade() {
+    public String getCidade() {
         return this.cidade;
     }
 
-    public void criarCidade(String cidade) {
+    public void setCidade(String cidade) {
         this.cidade = cidade;
     }
 
-    public String pegarEstado() {
+    public String getEstado() {
         return this.estado;
     }
 
-    public void criarEstado(String estado) {
+    public void setEstado(String estado) {
         this.estado = estado;
     }
 
-    public String pegarTelefone() {
+    public String getTelefone() {
         return this.telefone;
     }
 
-    public void criarTelefone(String telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
-    public String pegarEmail() {
+    public String getEmail() {
         return this.email;
     }
 
-    public void criarEmail(String email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    public PessoaFisica pegarPessoaFisica() {
+    public PessoaFisica getPessoaFisica() {
         return this.pessoaFisica;
     }
 
-    public void criarPessoaFisica(PessoaFisica pessoaFisica) {
+    public void setPessoaFisica(PessoaFisica pessoaFisica) {
         this.pessoaFisica = pessoaFisica;
     }
 
-    public PessoaJuridica pegarPessoaJuridica() {
+    public PessoaJuridica getPessoaJuridica() {
         return this.pessoaJuridica;
     }
 
-    public void criarPessoaJuridica(PessoaJuridica pessoaJuridica) {
+    public void setPessoaJuridica(PessoaJuridica pessoaJuridica) {
         this.pessoaJuridica = pessoaJuridica;
     }
 
